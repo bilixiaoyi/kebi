@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人机</title>
+    <script>
+        function redirectToBaidu() {
+            var inputValue = document.getElementById("inputBox").value;
+            if (inputValue === "Q") {
+                window.location.href = "a.html";
+            } else {
+                alert("这都不会赶紧回家种牛吧😂");
+            }
+        }
+    </script>
+    <style>
+     *{
+       margin:0;
+       padding:0;
+}
+     .div{
+       width:60%;
+       height:50%;
+       background-color:orange;
+       z-index:-1;
+       position:absolute;
+       display:block;
+left:20%;
+top:20%;
+border-radius:10px;
+}
+h1{
+text-align:center;}
+    </style>
+</head>
+<body>
+   <div class="div">
+    <h1>输入密码</h1>
+    <h3>提示:__，打包Q，吹包Q，哇抓Q，喷他Q，暗区突围(大写)</h3>
+    <input type="text" id="inputBox" placeholder="输入密码" />
+    <button onclick="redirectToBaidu()">确认</button>
+   </div>
+ <audio src="kill.mp3" autoplay loop></audio>
+</body>
+</html>
